@@ -2,6 +2,12 @@
   grid-column: 2;
   height: 100vh;
   max-height: 100vh;
+  background: #373737;
+  box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white,
+    12px 0 15px -4px rgba(148, 24, 165, 0.8),
+    -12px 0 15px -4px rgba(148, 24, 165, 0.8);
+  // border-left: 1px solid red;
+  // border-right: 1px solid red;
   p {
     font-size: 1.8rem;
   }
