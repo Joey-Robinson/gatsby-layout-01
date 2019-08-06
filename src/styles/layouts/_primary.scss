@@ -1,0 +1,10 @@
+.primary {
+  display: grid;
+  grid-template-columns: 15vw 70vw 15vw;
+  &--dark {
+    background: black;
+  }
+  &--light {
+    background: white;
+  }
+}
