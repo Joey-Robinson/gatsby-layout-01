@@ -1,10 +1,23 @@
 .light-mode {
   transition: background-color 0.3s ease-in;
-  color: white;
-  background-color: #ffffff;
+  color: #2d2d2d;
+  background-color: #2d2d2d;
+  transition: color 0.3s ease-in;
+  section {
+    transition: color 0.3s ease-in;
+    transition: background-color 0.3s ease-in;
+    background: white;
+  }
 }
 
 .dark-mode {
+  transition: background-color 0.3s ease-in;
+  transition: color 0.3s ease-in;
   color: white;
-  background-color: #2d2d2d;
+  background-color: #ffffff;
+  section {
+    transition: color 0.3s ease-in;
+    transition: background-color 0.3s ease-in;
+    background: #2d2d2d;
+  }
 }
