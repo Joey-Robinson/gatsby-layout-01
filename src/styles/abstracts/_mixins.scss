@@ -1,5 +1,6 @@
 @mixin page-defaults {
   grid-column: 2;
+  height: 100vh;
   max-height: 100vh;
   p {
     font-size: 1.8rem;
