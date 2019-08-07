@@ -15,7 +15,11 @@ const Navigation = () => (
       className="navigation--contact"
       content="Contact"
     />
-    <InternalLink path="/misc/" className="navigation--misc" content="Misc" />
+    <InternalLink
+      path="/about/"
+      className="navigation--about"
+      content="About"
+    />
   </nav>
 )
 
