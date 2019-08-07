@@ -25,7 +25,7 @@ export const query = graphql`
 `
 
 const ProjectTemplate = ({ data }) => {
-  const project = data.projectsJson
+  const project = data.projectsYaml
   const title = project.title
   const long_description = project.long_description
   const url = project.url
