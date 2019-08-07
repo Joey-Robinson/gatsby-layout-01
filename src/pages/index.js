@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/header/header"
-import ResumeDownload from "../components/header/contact/contact.resume"
+import ResumeDownload from "../components/contact/contact.resume"
 
 const IndexPage = () => (
   <Layout>
