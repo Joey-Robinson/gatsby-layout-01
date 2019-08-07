@@ -5,8 +5,8 @@ import Project from "../components/portfolio/project"
 import SEO from "../components/seo"
 
 export const query = graphql`
-  query($slug: String!) {
-    projectsYaml(slug: { eq: $slug }) {
+  query {
+    projectsYaml {
       title
       long_description
       url
