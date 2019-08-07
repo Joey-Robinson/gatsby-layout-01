@@ -29,7 +29,7 @@ const Portfolio = () => {
       }
     }
   `)
-  const projects = data.allProjectsJson.edges
+  const projects = data.allProjectsYaml.edges
 
   return (
     <Layout>
