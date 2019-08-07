@@ -29,6 +29,22 @@ module.exports = {
         path: `./data`,
       },
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: "pages",
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        tableOfContents: {
+          heading: null,
+          maxDepth: 6,
+        },
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

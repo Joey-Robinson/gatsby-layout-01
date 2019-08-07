@@ -8,6 +8,12 @@
     transition: background-color 0.3s ease-in;
     background: white;
   }
+  nav {
+    background: #2d2d2d;
+    a {
+      color: white;
+    }
+  }
 }
 
 .dark-mode {
@@ -19,5 +25,11 @@
     transition: color 0.3s ease-in;
     transition: background-color 0.3s ease-in;
     background: #2d2d2d;
+  }
+  nav {
+    background: white;
+    a {
+      color: #2d2d2d;
+    }
   }
 }
