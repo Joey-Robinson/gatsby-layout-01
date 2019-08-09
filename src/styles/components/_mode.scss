@@ -8,13 +8,15 @@
   background-size: cover;
   section {
     transition: color 0.3s ease-in;
-    // transition: background-color 0.3s ease-in;
     background: white;
   }
   nav {
-    background: #2d2d2d;
+    background: linear-gradient(45deg, #dae2f8, #d6a4a4);
+    background-size: 400%;
+    animation: bg-animation 10s infinite alternate;
     a {
-      color: white;
+      color: #2d2d2d;
+      text-shadow: 1px 1px 2px white;
     }
   }
 }
@@ -29,14 +31,14 @@
   background-size: cover;
   section {
     transition: color 0.3s ease-in;
-    // transition: background-color 0.3s ease-in;
     background: #2d2d2d;
   }
   nav {
-    background: linear-gradient(45deg, #c06c84, #6c5b7b, #355c7d);
+    background: linear-gradient(45deg, #434343, #000000);
     background-size: 400%;
     animation: bg-animation 10s infinite alternate;
     a {
+      text-shadow: 1px 1px 2px black;
       color: white;
     }
   }
