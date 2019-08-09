@@ -1,3 +1,12 @@
 .portfolio {
   @include page-defaults;
+
+  &--list {
+    overflow-y: scroll;
+    will-change: scroll-position;
+    -webkit-overflow-scrolling: touch;
+    list-style: none;
+    grid-column: 1;
+    grid-row: 1;
+  }
 }

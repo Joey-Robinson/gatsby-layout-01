@@ -47,29 +47,31 @@ const Portfolio = () => {
       />
       <section className="portfolio">
         <Header />
-        {projects.map(({ node: project }) => {
-          const title = project.title
-          const short_description = project.short_description
-          const slug = project.slug
-          const imageData = project.image.childImageSharp.fluid
-          const url = project.url
-          const technology = project.technology
-          const github = project.github
-          const id = project.id
+        <ul className="portfolio--list">
+          {projects.map(({ node: project }) => {
+            const title = project.title
+            const short_description = project.short_description
+            const slug = project.slug
+            const imageData = project.image.childImageSharp.fluid
+            const url = project.url
+            const technology = project.technology
+            const github = project.github
+            const id = project.id
 
-          return (
-            <ProjectPreview
-              title={title}
-              short_description={short_description}
-              slug={slug}
-              imageData={imageData}
-              url={url}
-              technology={technology}
-              github={github}
-              key={id}
-            />
-          )
-        })}
+            return (
+              <ProjectPreview
+                title={title}
+                short_description={short_description}
+                slug={slug}
+                imageData={imageData}
+                url={url}
+                technology={technology}
+                github={github}
+                key={id}
+              />
+            )
+          })}
+        </ul>
       </section>
     </Layout>
   )
