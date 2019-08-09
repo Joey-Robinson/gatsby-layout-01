@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import ProjectPreview from "../components/portfolio/project.preview"
 import SEO from "../components/seo"
+import Header from "../components/header/header"
 
 const Portfolio = () => {
   const data = useStaticQuery(graphql`
@@ -45,6 +46,7 @@ const Portfolio = () => {
         ]}
       />
       <section className="portfolio">
+        <Header />
         {projects.map(({ node: project }) => {
           const title = project.title
           const short_description = project.short_description

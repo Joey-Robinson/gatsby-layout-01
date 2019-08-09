@@ -3,6 +3,7 @@
 @import "./abstracts/mixins";
 // Base
 @import "./base/base";
+@import "./base/typography";
 // Components
 @import "./components/footer";
 @import "./components/header";
@@ -11,5 +12,7 @@
 @import "./components/navigation";
 // Layouts
 @import "./layouts/primary";
+@import "./layouts/projects";
 // Pages
 @import "./pages/home";
+@import "./pages/portfolio";
