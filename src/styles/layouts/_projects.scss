@@ -1,14 +1,19 @@
 .projects {
   grid-column: 1;
+  margin: 3rem 0;
+  h1 {
+    padding: 3.75px 6rem;
+  }
   p {
-    padding: 1.5rem 3rem;
+    padding: 3.75px 6rem;
+    margin-bottom: 5px;
   }
   span {
     font-size: 1.9rem;
     font-weight: 900;
   }
   hr {
-    width: 80%;
+    width: 87%;
     margin: 0 auto;
   }
 }
