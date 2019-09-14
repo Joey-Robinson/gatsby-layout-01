@@ -11,8 +11,10 @@
 @import "./components/mode";
 @import "./components/navigation";
 // Layouts
+@import "./layouts/blogs";
 @import "./layouts/primary";
 @import "./layouts/projects";
 // Pages
+@import "./pages/blog";
 @import "./pages/home";
 @import "./pages/portfolio";

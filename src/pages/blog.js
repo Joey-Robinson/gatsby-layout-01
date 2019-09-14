@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 // import SEO from "../components/seo"
 import { graphql, Link } from "gatsby"
+import Header from "../components/header/header"
 
 export const pageQuery = graphql`
   query BlogIndexQuery {
@@ -25,6 +26,7 @@ export const pageQuery = graphql`
 const Blog = ({ data }) => (
   <Layout>
     <section className="blog">
+      <Header />
       <ul className="blog--list">
         {data.allMarkdownRemark.edges.map(post => (
           <li className="blog--display blog--list__display" key={post.node.id}>

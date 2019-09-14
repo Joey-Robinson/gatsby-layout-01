@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
+import Header from "../components/header/header"
 
 export const postQuery = graphql`
   query BlogPostByPath($path: String) {
@@ -22,6 +23,7 @@ const BlogTemplate = ({ data }) => {
   return (
     <Layout>
       <div className="blogs">
+        <Header />
         <div className="blogs--content__back">
           <Link to="/blog/">&#8592; Go Back</Link>
         </div>

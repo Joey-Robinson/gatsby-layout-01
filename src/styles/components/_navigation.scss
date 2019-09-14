@@ -14,3 +14,7 @@
     align-self: center;
   }
 }
+
+div > [aria-current="page"] {
+  background: orangered;
+}

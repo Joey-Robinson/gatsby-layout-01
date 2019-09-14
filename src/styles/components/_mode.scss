@@ -11,12 +11,10 @@
   }
   section {
     background: white;
-    box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white,
-      12px 0 15px -4px black, -12px 0 15px -4px black;
   }
-  nav {
-    background: #373737;
-  }
+  // nav {
+  //   background: #373737;
+  // }
 }
 
 .dark-mode {
@@ -32,8 +30,6 @@
   }
   section {
     background: #2d2d2d;
-    box-shadow: 0 9px 0px 0px black, 0 -9px 0px 0px black,
-      12px 0 15px -4px white, -12px 0 15px -4px white;
   }
   nav {
     background: #e3e3e3;

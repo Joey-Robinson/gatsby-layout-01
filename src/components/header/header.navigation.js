@@ -3,7 +3,7 @@ import InternalLink from "../link.internal"
 
 const Navigation = () => (
   <nav className="navigation header--navigation">
-    <InternalLink path="/" className="navigation--home" content="Home" />
+    <InternalLink path="/" className="nav navigation--home" content="Home" />
     <InternalLink
       path="/portfolio/"
       className="navigation--portfolio"
