@@ -1,10 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const InternalLink = ({ path, content, className }) => (
-  <div className={className}>
-    <Link to={path}>{content}</Link>
-  </div>
+const isActive = ({ isCurrent }) => {
+  return isCurrent ? { className: "active" } : null
+}
+
+const InternalLink = ({ path, content, props }) => (
+  <Link to={path} {...props} getProps={isActive}>
+    <span>{content}</span>
+  </Link>
 )
 
 export default InternalLink

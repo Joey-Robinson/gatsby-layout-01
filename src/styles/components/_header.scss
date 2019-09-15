@@ -5,7 +5,6 @@
   max-height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  border-left: 1px solid orangered;
   grid-template-rows: 30vh 40vh 30vh;
   &--navigation {
     grid-row: 2;

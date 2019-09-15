@@ -5,16 +5,34 @@
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%232d2d2d'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='24' height='24' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%232d2d2d' cx='12' cy='12' r='12'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.1'/%3E%3C/svg%3E");
   background-attachment: fixed;
   background-size: cover;
+  & nav {
+    border-top: 1px solid orangered;
+    border-bottom: 1px solid orangered;
+    a {
+      color: orangered;
+    }
+    & .active {
+      background: orangered;
+      color: white;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      display: grid;
+      span {
+        align-self: center;
+      }
+    }
+  }
+  & header {
+    border-left: 1px solid orangered;
+  }
   & .projects__span,
   .projects--hr {
-    color: rgb(226, 29, 29);
+    color: orangered;
   }
   section {
     background: white;
   }
-  // nav {
-  //   background: #373737;
-  // }
 }
 
 .dark-mode {
@@ -24,14 +42,33 @@
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%232d2d2d'/%3E%3Cstop offset='1' stop-color='%23ffffff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='24' height='24' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23ffffff' cx='12' cy='12' r='12'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.1'/%3E%3C/svg%3E");
   background-attachment: fixed;
   background-size: cover;
+  & nav {
+    border-top: 1px solid #00ffbf;
+    border-bottom: 1px solid #00ffbf;
+    a {
+      color: #00ffbf;
+    }
+    & .active {
+      background: #00ffbf;
+      color: white;
+      text-shadow: 1px 1px 1px black;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      display: grid;
+      span {
+        align-self: center;
+      }
+    }
+  }
+  & header {
+    border-left: 1px solid #00ffbf;
+  }
   & .projects__span,
   .projects--hr {
-    color: rgb(0, 255, 191);
+    color: #00ffbf;
   }
   section {
     background: #2d2d2d;
-  }
-  nav {
-    background: #e3e3e3;
   }
 }

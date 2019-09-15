@@ -2,19 +2,10 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, 1fr);
-  border-top: 1px solid orangered;
-  border-bottom: 1px solid orangered;
   a {
     text-decoration: none;
-  }
-  div,
-  a {
     font-size: 2rem;
     justify-self: center;
     align-self: center;
   }
-}
-
-div > [aria-current="page"] {
-  background: orangered;
 }
