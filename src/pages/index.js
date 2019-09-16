@@ -8,7 +8,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <section className="home">
       <Header />
-      <h1>From Home</h1>
+      <h1 className="animated--heading">From Home</h1>
     </section>
   </Layout>
 )

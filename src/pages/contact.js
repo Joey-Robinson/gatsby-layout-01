@@ -6,7 +6,7 @@ const Contact = () => (
   <Layout>
     <section className="contact">
       <Header />
-      <h1>From Contact</h1>
+      <h1 className="animated--heading">From Contact</h1>
     </section>
   </Layout>
 )

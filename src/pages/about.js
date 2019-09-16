@@ -6,7 +6,7 @@ const About = () => (
   <Layout>
     <section className="about">
       <Header />
-      <h1>From About Page</h1>
+      <h1 className="animated--heading">From About Page</h1>
     </section>
   </Layout>
 )

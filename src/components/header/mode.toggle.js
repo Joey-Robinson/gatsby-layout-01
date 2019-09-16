@@ -11,7 +11,7 @@ const ModeToggle = () => {
       role="img"
       aria-label="Sun and Moon images to indicate what mode you're on"
     >
-      <button onClick={darkMode.toggle}>
+      <button onClick={darkMode.toggle} aria-label="Toggle Modes">
         {!darkMode.value ? (
           <img aria-label="Crescent Moon" src={moon} alt="Dark Mode" />
         ) : (
