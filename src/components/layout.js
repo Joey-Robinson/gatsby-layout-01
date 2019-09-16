@@ -1,5 +1,4 @@
 import React from "react"
-import Footer from "./footer"
 import "../styles/main.scss"
 
 const Layout = ({ children }) => (

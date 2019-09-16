@@ -1,4 +1,23 @@
 .footer {
-  grid-column: 2;
-  display: none;
+  grid-column: 1;
+  grid-row: 3;
+  align-self: end;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  span {
+    font-size: 2rem;
+    grid-column: 1 / -1;
+    justify-self: center;
+    padding: 5px 0;
+  }
+  div,
+  a {
+    justify-self: center;
+    align-self: center;
+    grid-row: 2;
+  }
+  svg {
+    font-size: 1.8rem;
+  }
 }
