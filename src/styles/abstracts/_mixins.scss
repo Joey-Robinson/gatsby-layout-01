@@ -6,11 +6,6 @@
   height: 100vh;
   max-height: 100vh;
   background: #373737;
-  h1 {
-    grid-column: 1;
-    align-self: center;
-    justify-self: center;
-  }
   p {
     font-size: 1.8rem;
     @include respond(phone) {

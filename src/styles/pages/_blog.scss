@@ -1,3 +1,90 @@
 .blog {
   @include page-defaults;
+  &--list {
+    overflow-y: scroll;
+    will-change: scroll-position;
+    -webkit-overflow-scrolling: touch;
+    list-style: none;
+    grid-column: 1;
+    grid-row: 1 / -1;
+  }
+}
+
+.container {
+  display: grid;
+  padding: 1.5rem 0;
+  margin: 3rem 0 0 0;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  @include respond(tabLand) {
+    width: 95%;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 5rem 2.5rem 1fr;
+  }
+  @include respond(phone) {
+    width: 100%;
+    margin: 1.5rem 0 0 0;
+    justify-self: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 2.5rem 1fr;
+  }
+  &--title {
+    align-self: center;
+    justify-self: left;
+    display: block;
+    font-size: 2.3rem;
+    padding: 0 3rem;
+    @include respond(tabLand) {
+      padding: 0 1.5rem;
+      margin: 0;
+      align-self: start;
+    }
+    @include respond(phone) {
+      align-self: start;
+      grid-column: 1;
+      grid-row: 1;
+      font-size: 2rem;
+      justify-self: left;
+    }
+  }
+  &--date {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 1.6rem;
+    padding: 0 3rem;
+    align-self: center;
+    justify-self: right;
+    font-style: italic;
+    @include respond(tabLand) {
+      padding: 1.5rem 6rem 1.5rem 0;
+    }
+    @include respond(phone) {
+      align-self: center;
+      grid-column: 1;
+      grid-row: 1 / 3;
+      margin: 1rem 0 0 0;
+      padding: 1.5rem;
+      justify-self: left;
+    }
+  }
+  &--excerpt {
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+    align-self: start;
+    font-size: 1.8rem;
+    padding: 1.5rem 3rem;
+    margin: 0;
+    font-weight: 400;
+    @include respond(tabLand) {
+      font-size: 1.8rem;
+      padding: 0 1.5rem;
+    }
+    @include respond(phone) {
+      grid-column: 1;
+      grid-row: 3;
+      justify-self: left;
+      font-size: 1.6rem;
+      padding: 1.5rem;
+    }
+  }
 }

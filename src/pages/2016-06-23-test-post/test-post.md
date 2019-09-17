@@ -1,7 +1,7 @@
 ---
-path: "/test-post/"
+path: "/test-post-six/"
 title: "Test Post"
-date: "2011-06-23"
+date: "2016-06-23"
 author: "JB"
 ---
 
