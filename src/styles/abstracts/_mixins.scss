@@ -15,6 +15,10 @@
   h1 {
     font-size: 3rem;
   }
+  & .animated--heading {
+    justify-self: center;
+    align-self: center;
+  }
   h2,
   h3,
   h4,

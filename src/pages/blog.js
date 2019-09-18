@@ -37,6 +37,7 @@ const Blog = ({ data }) => (
             </h1>
             <p className="container--date">{post.node.frontmatter.date}</p>
             <p className="container--excerpt">{post.node.excerpt}</p>
+            <hr className="container--hr" />
           </div>
         ))}
       </ul>

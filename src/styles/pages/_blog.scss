@@ -11,11 +11,18 @@
 }
 
 .container {
+  align-self: center;
   display: grid;
-  padding: 1.5rem 0;
-  margin: 3rem 0 0 0;
+  margin: 3rem 0;
+  padding: 0 3rem;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: repeat(3, 1fr);
+  & hr {
+    width: 94%;
+    margin: 0 auto;
+    justify-self: center;
+    grid-column: 1 / -1;
+  }
   @include respond(tabLand) {
     width: 95%;
     grid-template-columns: 1fr auto;
