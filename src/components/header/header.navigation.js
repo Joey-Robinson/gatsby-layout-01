@@ -3,11 +3,11 @@ import InternalLink from "../link.internal"
 
 const Navigation = () => (
   <nav className="navigation header--navigation">
-    <InternalLink path="/" content="Home" />
-    <InternalLink path="/portfolio/" content="Portfolio" />
-    <InternalLink path="/blog/" content="Blog" />
-    <InternalLink path="/contact/" content="Contact" />
-    <InternalLink path="/about/" content="About" />
+    <InternalLink title="Home" path="/" content="Home" />
+    <InternalLink title="Portfolio" path="/portfolio/" content="Portfolio" />
+    <InternalLink title="Blog" path="/blog/" content="Blog" />
+    <InternalLink title="Contact" path="/contact/" content="Contact" />
+    <InternalLink title="About" path="/about/" content="About" />
   </nav>
 )
 
