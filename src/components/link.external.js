@@ -1,8 +1,9 @@
 import React from "react"
 
-const ExternalLink = ({ path, content, className }) => (
+const ExternalLink = ({ path, content, className, title, place }) => (
   <div className={className}>
-    <a href={path} target="_blank" rel="noopener noreferrer">
+    <span>{place}:</span>
+    <a href={path} target="_blank" rel="noopener noreferrer" title={title}>
       {content}
     </a>
   </div>

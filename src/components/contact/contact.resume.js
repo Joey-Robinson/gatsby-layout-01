@@ -1,6 +1,10 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
+// You need to put your resume inside of the project. I have mine listed in
+// The static folder, to make it easier. But the below graphql query will
+// Look for any file with pdf and return a download button for anything found
+// I personally haven't tested it with multiple PDF files, though.
 const ResumeDownload = () => {
   const data = useStaticQuery(graphql`
     {

@@ -1,3 +1,17 @@
 .contact {
   @include page-defaults;
+  &--list {
+    grid-row: 2;
+    justify-self: center;
+    font-size: 1.8rem;
+    span {
+      padding: 0 0.75rem 0 0;
+    }
+  }
+  &--resume {
+    justify-self: center;
+    grid-row: 3;
+    align-self: end;
+    margin: 0 0 3rem 0;
+  }
 }

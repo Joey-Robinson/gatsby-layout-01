@@ -37,6 +37,16 @@
   .container--hr {
     color: orangered;
   }
+  & .resume--download {
+    border: none;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    padding: 1.5rem 3rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background: orangered;
+    cursor: pointer;
+  }
   section {
     background: #eee;
   }
@@ -81,6 +91,16 @@
   .projects--hr,
   .container--hr {
     color: #00ffbf;
+  }
+  & .resume--download {
+    border: none;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    padding: 1.5rem 3rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background: #00ffbf;
+    cursor: pointer;
   }
   section {
     background: #2d2d2d;
