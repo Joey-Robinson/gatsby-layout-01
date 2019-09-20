@@ -40,6 +40,14 @@ const ContactList = () => (
         content="Joey-Robinson"
       />
     </li>
+    <li>
+      <ExternalLink
+        place="CodePen"
+        path=""
+        title="CodePen"
+        content="Joey-Robinson"
+      />
+    </li>
   </ul>
 )
 
