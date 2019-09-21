@@ -1,11 +1,17 @@
-// The form can be styled how you desire. I just threw something together
-// To actually have something there. Right now I'm using grid to align
-// It on the second row, but could easily be changed.
 .contact {
   @include page-defaults;
+  &--greeting {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: start;
+    p {
+      font-size: 1.6rem;
+      padding: 0 12rem;
+    }
+  }
   &--list {
-    align-self: center;
-    font-size: 2rem;
+    align-self: end;
+    font-size: 1.8rem;
     grid-column: 1;
     grid-row: 2;
     justify-self: center;
@@ -17,5 +23,7 @@
     justify-self: center;
     align-self: end;
     margin: 0 0 4.5rem 0;
+    grid-row: 3;
+    grid-column: 1;
   }
 }
