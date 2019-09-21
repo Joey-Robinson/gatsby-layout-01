@@ -37,7 +37,8 @@
   .container--hr {
     color: orangered;
   }
-  & .resume--download {
+  & .resume--download,
+  .button--one {
     border: none;
     color: white;
     text-shadow: 1px 1px 1px black;
@@ -92,7 +93,8 @@
   .container--hr {
     color: #00ffbf;
   }
-  & .resume--download {
+  & .resume--download,
+  .button--one {
     border: none;
     color: white;
     text-shadow: 1px 1px 1px black;
