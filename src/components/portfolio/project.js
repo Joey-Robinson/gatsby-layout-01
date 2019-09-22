@@ -26,8 +26,6 @@ const Project = ({
       target="_blank"
       rel="noopener noreferrer"
       className="project--container"
-      aria-describedby="projectsImage"
-      label={title}
     >
       <Image
         id="projectsImage"

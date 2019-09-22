@@ -8,7 +8,7 @@ import Header from "../components/header/header"
 const Portfolio = () => {
   const data = useStaticQuery(graphql`
     {
-      allProjectsYaml {
+      allProjectsJson {
         edges {
           node {
             title
@@ -30,7 +30,7 @@ const Portfolio = () => {
       }
     }
   `)
-  const projects = data.allProjectsYaml.edges
+  const projects = data.allProjectsJson.edges
 
   return (
     <Layout>

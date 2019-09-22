@@ -5,8 +5,8 @@ import Project from "../components/portfolio/project"
 import SEO from "../components/seo"
 
 export const query = graphql`
-  query {
-    projectsYaml {
+  query($slug: String!) {
+    projectsJson(slug: { eq: $slug }) {
       title
       long_description
       url
@@ -25,7 +25,7 @@ export const query = graphql`
 `
 
 const ProjectTemplate = ({ data }) => {
-  const project = data.projectsYaml
+  const project = data.projectsJson
   const title = project.title
   const long_description = project.long_description
   const url = project.url
@@ -40,11 +40,13 @@ const ProjectTemplate = ({ data }) => {
         title={title}
         description={long_description}
         keywords={[
+          `Joey Robinson`,
           `Portfolio`,
           `Front-End`,
           `Front-End Development`,
           `React`,
           `GatsbyJS`,
+          `Joey Robinson Portfolio`,
         ]}
       />
       <Project

@@ -1,7 +1,7 @@
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const result = await graphql(`
     {
-      allProjectsYaml {
+      allProjectsJson {
         edges {
           node {
             slug
@@ -25,7 +25,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
   `)
 
-  const projects = result.data.allProjectsYaml.edges
+  const projects = result.data.allProjectsJson.edges
   const blogs = result.data.allMarkdownRemark.edges
 
   blogs.forEach(({ node }) => {

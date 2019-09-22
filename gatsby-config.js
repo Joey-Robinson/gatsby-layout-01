@@ -8,6 +8,14 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "project",
+        path: "./data",
+      },
+    },
+    "gatsby-transformer-json",
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -19,14 +27,6 @@ module.exports = {
       options: {
         path: `${__dirname}/src/static`,
         name: "static",
-      },
-    },
-    `gatsby-transformer-yaml`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: "project",
-        path: `./data`,
       },
     },
     {
