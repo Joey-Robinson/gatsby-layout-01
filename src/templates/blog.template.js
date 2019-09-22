@@ -22,20 +22,42 @@ const BlogTemplate = ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
-      <div className="blogs">
+      <section className="blogs">
         <Header />
-        <div className="blogs--content__back">
-          <Link to="/blog/">&#8592; Go Back</Link>
-        </div>
-        <p className="blogs--content__maker">{post.frontmatter.date}</p>
-        <div className="blogs--content__title">
-          <h1>{post.frontmatter.title}</h1>
+        <div className="blogs--top">
+          <div
+            aria-describedby="blogTitle"
+            className="blogs--top__title blogs--title"
+          >
+            <h1 id="blogTitle" label={post.frontmatter.title}>
+              {post.frontmatter.title}
+            </h1>
+            <p
+              className="blogs--top__date blogs--date"
+              label={`Posted On: ${post.frontmatter.date}`}
+            >
+              {post.frontmatter.date}
+            </p>
+            <div
+              aria-describedby="backToBlogPage"
+              className="blogs--top__back blogs--back"
+            >
+              <Link
+                to="/blog/"
+                title="Go Back"
+                aria-label="Go Back"
+                id="backToBlogPage"
+              >
+                &#8592; Go Back
+              </Link>
+            </div>
+          </div>
         </div>
         <div
-          className="blogs--content__main"
+          className="blogs--content__main blogs--main"
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
-      </div>
+      </section>
     </Layout>
   )
 }

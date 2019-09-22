@@ -1,3 +1,38 @@
 .blogs {
   @include page-defaults;
+  &--top {
+    display: grid;
+    justify-self: left;
+    grid-template-columns: 1fr;
+    position: fixed;
+    grid-column: 1;
+    h1 {
+      padding: 4.2rem 0 0 1rem;
+    }
+    p {
+      padding: 4rem 0 0 1.5rem;
+    }
+    h1,
+    p,
+    a {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+    }
+    &__back {
+      padding: 3.5rem 0 0 1.5rem;
+      font-size: 1.6rem;
+      text-align: center;
+    }
+  }
+  &--main {
+    grid-row: 1 / -1;
+    grid-column: 1;
+    justify-self: center;
+    overflow-y: scroll;
+    will-change: scroll-position;
+    -webkit-overflow-scrolling: touch;
+    p {
+      padding: 4rem 6rem 1.5rem 6rem;
+    }
+  }
 }
