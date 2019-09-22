@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Image from "gatsby-image"
+import Header from "../header/header"
 
 const Project = ({
   title,
@@ -12,8 +13,12 @@ const Project = ({
   image,
 }) => (
   <section className="project">
-    <h1 className="project--title">
-      <span className="projects__span">Name:</span>&nbsp;
+    <Header />
+    <h1 aria-describedby="projectsTitle" className="project--title">
+      <span id="projectsTitle" label={title} className="projects__span">
+        Name:
+      </span>
+      &nbsp;
       {title}
     </h1>
     <a
@@ -21,10 +26,19 @@ const Project = ({
       target="_blank"
       rel="noopener noreferrer"
       className="project--container"
+      aria-describedby="projectsImage"
+      label={title}
     >
-      <Image className="project--image image" fluid={imageData} alt={title} />
+      <Image
+        id="projectsImage"
+        className="project--image image"
+        fluid={imageData}
+        alt={title}
+      />
     </a>
-    <p className="project__long__description">{long_description}</p>
+    <p label={long_description} className="project__long__description">
+      {long_description}
+    </p>
     <h4 className="project--technology">
       <span className="projects__span">Tech:</span> {technology}
     </h4>
