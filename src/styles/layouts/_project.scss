@@ -1,3 +1,41 @@
 .project {
   @include page-defaults;
+  &--main {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: left;
+    margin: 3rem 0 0 1.5rem;
+    h1 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.6rem;
+    }
+  }
+  &--long {
+    grid-row: 1;
+    grid-column: 1;
+    align-self: end;
+    justify-self: left;
+    display: inline-block;
+    padding: 0 1.5rem;
+  }
+  &--links {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: right;
+    // margin: 3.75rem 1.5rem 0 0;
+  }
+  // &--github {
+  //   padding: 0 0 0 4rem;
+  // }
+  // &--live {
+  //   padding: 0 0 0 1.8rem;
+  // }
+  &--container {
+    grid-column: 1;
+    grid-row: 3;
+    align-self: end;
+    margin: 0 0 1.5rem 0;
+  }
 }

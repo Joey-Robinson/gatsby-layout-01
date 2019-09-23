@@ -14,18 +14,24 @@ const Project = ({
 }) => (
   <section className="project">
     <Header />
-    <h1 aria-describedby="projectsTitle" className="project--title">
-      <span id="projectsTitle" label={title} className="projects__span">
-        Name:
-      </span>
-      &nbsp;
-      {title}
-    </h1>
+    <div className="project--main">
+      <h1 aria-describedby="projectsTitle" className="project--title">
+        <span id="projectsTitle" label={title} className="projects__span">
+          Name:
+        </span>
+        &nbsp;
+        {title}
+      </h1>
+      <p className="project--technology">
+        <span className="projects__span">Tech:</span> {technology}
+      </p>
+    </div>
     <a
       href={image}
       target="_blank"
       rel="noopener noreferrer"
       className="project--container"
+      role="img"
     >
       <Image
         id="projectsImage"
@@ -34,35 +40,43 @@ const Project = ({
         alt={title}
       />
     </a>
-    <p label={long_description} className="project__long__description">
+    <p
+      label={long_description}
+      className="project--long project__long__description"
+    >
       {long_description}
     </p>
-    <h4 className="project--technology">
-      <span className="projects__span">Tech:</span> {technology}
-    </h4>
-    <p className="project--github">
-      {!github ? (
-        "Private Repo"
-      ) : (
-        <a href={github} target="_blank" rel="noopener noreferrer">
-          View The GitHub
-        </a>
-      )}
-    </p>
-    <p className="project--live">
-      {!url ? (
-        "Due to recent events coming to light with GoDaddy, I'm no longer using their serivces. I'll either rehost this or remove it completely."
-      ) : (
-        <a href={url} target="_blank" rel="noopener noreferrer">
-          View this project online &rarr;
-        </a>
-      )}
-    </p>
-    <p className="project--back">
-      <Link to="/portfolio/">
-        &larr; <span>Back to all projects</span>
-      </Link>
-    </p>
+    <div className="project--links">
+      <p className="project--back">
+        <Link to="/portfolio/">
+          &larr; <span>Back to all projects</span>
+        </Link>
+      </p>
+      <p className="project--github">
+        {!github ? (
+          "Private Repo"
+        ) : (
+          <a href={github} target="_blank" rel="noopener noreferrer">
+            View The GitHub
+          </a>
+        )}
+      </p>
+      <p className="project--live">
+        {!url ? (
+          "Current Not Hosted"
+        ) : (
+          <a
+            title="View Live"
+            aria-label="View Live"
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View this project online &rarr;
+          </a>
+        )}
+      </p>
+    </div>
   </section>
 )
 
