@@ -29,16 +29,18 @@ const Blog = ({ data }) => (
       <Header />
       <ul className="blog--list">
         {data.allMarkdownRemark.edges.map(post => (
-          <div className="container">
-            <h1 className="container--title">
-              <Link to={post.node.frontmatter.path}>
-                {post.node.frontmatter.title} &rarr;
-              </Link>
-            </h1>
-            <p className="container--date">{post.node.frontmatter.date}</p>
-            <p className="container--excerpt">{post.node.excerpt}</p>
-            <hr className="container--hr" />
-          </div>
+          <li>
+            <div className="container">
+              <h2 className="container--title">
+                <Link to={post.node.frontmatter.path}>
+                  {post.node.frontmatter.title} &rarr;
+                </Link>
+              </h2>
+              <p className="container--date">{post.node.frontmatter.date}</p>
+              <p className="container--excerpt">{post.node.excerpt}</p>
+              <hr className="container--hr" />
+            </div>
+          </li>
         ))}
       </ul>
     </section>

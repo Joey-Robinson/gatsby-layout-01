@@ -63,7 +63,7 @@ const Project = ({
       </p>
       <p className="project--live">
         {!url ? (
-          "Current Not Hosted"
+          "Currently Not Hosted"
         ) : (
           <a
             title="View Live"
