@@ -27,9 +27,6 @@
       width: 100%;
       text-align: center;
       display: grid;
-      span {
-        align-self: center;
-      }
     }
   }
   & header {
@@ -80,15 +77,11 @@
     & .active {
       background: #00ffbf;
       color: white;
-      font-weight: 700;
       text-shadow: 2px 2px 1.5px black;
       height: 100%;
       width: 100%;
       text-align: center;
       display: grid;
-      span {
-        align-self: center;
-      }
     }
   }
   & header {
