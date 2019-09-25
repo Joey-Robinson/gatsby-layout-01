@@ -1,3 +1,20 @@
 .home {
   @include page-defaults;
+  &--writing {
+    grid-row: 2;
+    grid-column: 1;
+    justify-self: center;
+    align-self: start;
+  }
+  &--image {
+    grid-column: 1;
+    grid-row: 2 / -1;
+    align-self: end;
+    justify-self: center;
+    a {
+      display: block;
+      width: 25rem;
+      height: 25rem;
+    }
+  }
 }
