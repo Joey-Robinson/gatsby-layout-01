@@ -26,27 +26,6 @@ const About = () => (
         stare i shredded your linens for you yet meow and walk away. Intrigued
         by the shower make meme, make cute face and ask for petting. Annoy
         kitten brother with poking. Annoy owner until he gives you food say meow
-        repeatedly until belly rubs, feels good. I vomit in the bed in the
-        middle of the night hide when guests come over, or is good you
-        understand your place in my world grab pompom in mouth and put in water
-        dish. Kick up litter sniff catnip and act crazy yet hunt by meowing
-        loudly at 5am next to human slave food dispenser cough or murr i hate
-        humans they are so annoying poop on floor and watch human clean up.
-        Kitty pounce, trip, faceplant you didn't see that no you didn't
-        definitely didn't lick, lick, lick, and preen away the embarrassment i
-        see a bird i stare at it i meow at it i do a wiggle come here birdy
-        spill litter box, scratch at owner, destroy all furniture, especially
-        couch what a cat-ass-trophy! for ooh, are those your $250 dollar
-        sandals? lemme use that as my litter box swat at dog. Sleep on dog bed,
-        force dog to sleep on floor what a cat-ass-trophy! yet damn that dog
-        good now the other hand, too poop on floor and watch human clean up
-        throw down all the stuff in the kitchen. Shove bum in owner's face like
-        camera lens steal the warm chair right after you get up purr for no
-        reason annoy kitten brother with poking or dismember a mouse and then
-        regurgitate parts of it on the family room floor. You are a captive
-        audience while sitting on the toilet, pet me pose purrfectly to show my
-        beauty fall over dead (not really but gets sypathy) shred all toilet
-        paper and spread around the house.
       </p>
     </section>
   </Layout>

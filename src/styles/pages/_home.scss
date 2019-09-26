@@ -8,13 +8,13 @@
   }
   &--image {
     grid-column: 1;
-    grid-row: 2 / -1;
-    align-self: end;
+    grid-row: 3;
+    align-self: center;
     justify-self: center;
     a {
       display: block;
-      width: 25rem;
-      height: 25rem;
+      width: 50rem;
+      height: 50rem;
     }
   }
 }

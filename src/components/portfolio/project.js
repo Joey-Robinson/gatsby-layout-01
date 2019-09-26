@@ -47,9 +47,13 @@ const Project = ({
       {long_description}
     </p>
     <div className="project--links">
-      <p className="project--back">
-        <Link to="/portfolio/">
-          &larr; <span>Back to all projects</span>
+      <p aria-labelledby="backToPortfolio" className="project--back">
+        <Link
+          label="Back To All Projects."
+          title="Back To All Projects."
+          to="/portfolio/"
+        >
+          &larr; <span id="backToPortfolio">Back to all projects</span>
         </Link>
       </p>
       <p className="project--github">
