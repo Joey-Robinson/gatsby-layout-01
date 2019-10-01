@@ -1,20 +1,30 @@
 .home {
   @include page-defaults;
+  h1 {
+    display: block;
+    grid-row: 1;
+    grid-column: 1;
+  }
   &--writing {
-    grid-row: 2;
+    grid-row: 1;
     grid-column: 1;
     justify-self: center;
-    align-self: start;
+    align-self: center;
+    margin: 4.5rem 0 0 0;
+    p {
+      padding: 0 6rem;
+    }
   }
   &--image {
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 2;
     align-self: center;
     justify-self: center;
     a {
       display: block;
       width: 50rem;
-      height: 50rem;
+      height: auto;
+      margin-bottom: 9rem;
     }
   }
 }

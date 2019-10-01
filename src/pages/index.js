@@ -12,8 +12,10 @@ const IndexPage = () => (
       <h1 className="animated--heading">From Home</h1>
       <div className="home--writing">
         <p>
-          Put stuff here. You can change the source of the image in its
-          component file.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+          facere neque. Sapiente praesentium commodi ullam nemo necessitatibus
+          culpa soluta totam repellendus explicabo, libero doloremque,
+          blanditiis, minima dolor laboriosam voluptate quasi.
         </p>
       </div>
       <div className="home--image">
